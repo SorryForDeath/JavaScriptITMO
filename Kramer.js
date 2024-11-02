@@ -13,8 +13,5 @@ const a1 = 3, b1 = 4, c1 = 5;
 const a2 = 5, b2 = 4, c2 = 3;
 const solution = solveCramer(a1, b1, c1, a2, b2, c2);
 
-if (typeof solution === "string") {
-    console.log(solution);
-} else {
-    console.log(`x = ${solution.x}, y = ${solution.y}`);
-}
+if (typeof solution === "string") console.log(solution);
+else console.log(`x = ${solution.x}, y = ${solution.y}`);
