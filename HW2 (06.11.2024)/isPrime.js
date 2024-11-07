@@ -7,11 +7,8 @@ function isPrime(number) {
     return true;
 }
 const input = process.argv[2];
-if (input < 2) {
-    console.log("Число не подходит");
-    return
-}
-let count = 0
+if (input < 2) return 0;
+let count = 0;
 for (let i = 3; i <= input; i += 2) {
     if (isPrime(i)) count++;
 }
